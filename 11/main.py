@@ -3,8 +3,12 @@
 """
 
 import random
+import sys
 
 num = int(input('需要多少个随机注：'))
+if num <= 0:
+    print('请输入一个大于0的数！')
+    sys.exit(0)
 
 while num:
     red_balls = set()
