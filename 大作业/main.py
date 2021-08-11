@@ -58,5 +58,7 @@ if __name__ == '__main__':
     window.mainloop()
 
     # 运行filter.py文件
+    print('筛选中...')
     os.system("python filter.py")
+    print('已完成筛选，查看结果请打开生成的result.html文件。')
 

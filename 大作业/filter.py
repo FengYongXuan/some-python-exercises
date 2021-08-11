@@ -18,7 +18,7 @@ def get_info(browser):
     # 处理无法获取网页的异常
     try:
         browser.get("https://www.icourse163.org/search.htm?search={}".format(keyword))
-        time.sleep(5)           # 让页面加载一会
+        time.sleep(8)           # 让页面加载一会
     except:
         print('无法获取网页！')
     # 处理搜索无结果的异常
@@ -201,4 +201,3 @@ if __name__ == '__main__':
 
     # 将两幅图合并到一个html文件中
     merge_show(filename1, filename2)
-    print('已完成筛选，查看结果请打开生成的result.html文件。')
